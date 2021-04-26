@@ -67,6 +67,7 @@ li, a {
 
 .nav {
   margin-left: 45px;
+  overflow: hidden;
 }
 
 .nav li {
@@ -83,13 +84,29 @@ li, a {
   padding: 1em;
   position: absolute;
   background: white;
-  margin-top: 15px;
-  margin-left: -15px;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .options ul li {
   color: #1f3f5b;
   margin-bottom: 7px;
+  padding: 12px 0;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 12px;
+}
+
+.see-opts:hover .options {
+  display: block;
+}
+
+.options ul li:hover {
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .register a {

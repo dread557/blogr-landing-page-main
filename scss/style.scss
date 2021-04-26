@@ -70,6 +70,7 @@ li, a {
 
 .nav {
     margin-left: 45px;
+    overflow: hidden;
 }
 
 .nav li {
@@ -86,23 +87,31 @@ li, a {
     padding: 1em;
     position: absolute;
     background: $color-white;
-    margin-top: 15px;
-    margin-left: -15px;
+    // margin-top: 15px;
+    // margin-left: -15px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .options ul li {
     color: $v-dark-blue;
     margin-bottom: 7px;
+    padding: 12px 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 12px;
 }
 
-// .nav li:hover .options {
-//     padding: 1em;
-//     display: flex;
-//     position: absolute;
-//     background: $color-white;
-//     margin-top: 15px;
-//     margin-left: -15px;
-// }
+.see-opts:hover .options {
+    display: block;
+}
+
+.options ul li:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
 
 
 .register a {
