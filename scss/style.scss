@@ -358,6 +358,8 @@ footer div ul li a {
 
     .intro-img {
         margin-top: 0;
+        right: 0;
+        min-width: 230px;
     }
 
     .intro-text {
@@ -386,7 +388,7 @@ footer div ul li a {
     }
 
     .info-img {
-        min-width: 350px;
+        min-width: 230px;
         right: 0;
         position: initial;
     }
@@ -400,6 +402,10 @@ footer div ul li a {
         padding: 3rem 2rem;
         flex-direction: column;
         text-align: center;
+    }
+
+    footer .logo {
+        align-self: centers;
     }
 }
 
