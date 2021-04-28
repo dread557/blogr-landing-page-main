@@ -61,6 +61,10 @@ li, a {
     color: $color-white;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .top-nav,
 .head-nav,
 .nav {
@@ -70,7 +74,6 @@ li, a {
 
 .nav {
     margin-left: 45px;
-    overflow: hidden;
 }
 
 .nav li {
@@ -346,6 +349,14 @@ footer div ul li a {
     .register {
         display: none;
     }
+    
+    .head-nav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
 
     .header-text h1 {
         font-size: 2em;
@@ -356,7 +367,7 @@ footer div ul li a {
         height: 24px;
         width: 30px;
     }
-
+    
     .intro {
         padding: 5em 2em 0;
     }
@@ -414,7 +425,7 @@ footer div ul li a {
     }
 
     footer .logo {
-        align-self: centers;
+        align-self: center;
     }
 }
 

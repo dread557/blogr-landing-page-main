@@ -54,6 +54,10 @@ li, a {
   color: white;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .top-nav,
 .head-nav,
 .nav {
@@ -67,7 +71,6 @@ li, a {
 
 .nav {
   margin-left: 45px;
-  overflow: hidden;
 }
 
 .nav li {
@@ -355,6 +358,13 @@ footer div ul li a {
   .register {
     display: none;
   }
+  .head-nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   .header-text h1 {
     font-size: 2em;
   }
@@ -418,9 +428,9 @@ footer div ul li a {
     text-align: center;
   }
   footer .logo {
-    -ms-flex-item-align: centers;
-        -ms-grid-row-align: centers;
-        align-self: centers;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
