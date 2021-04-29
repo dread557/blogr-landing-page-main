@@ -48,8 +48,13 @@ header {
     color: $color-white;
 }
 
-.open-nav {
+.open-nav,
+.close-nav {
     display: none;
+}
+
+.close-nav {
+    height: 24px;
 }
 
 ul {
@@ -152,6 +157,10 @@ button.learn:hover {
     cursor: pointer;
 }
 
+// .mobile-nav {
+//     display: none;
+// }
+
 .header-text {
     text-align: center;
     padding-top: 50px;
@@ -160,6 +169,10 @@ button.learn:hover {
 
 .header-text h1 {
     font-size: 3em;
+}
+
+.mobile-nav {
+    display: none;
 }
 
 .intro {
@@ -340,6 +353,7 @@ footer div ul li a {
     header {
         padding: 3em 2em 6em;
         background-size: auto;
+        position: relative;
     }
 
     .nav,
@@ -355,6 +369,105 @@ footer div ul li a {
         display: block;
         height: 24px;
         width: 30px;
+    }
+    
+    .mobile-nav .register {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-nav .register a {
+        color: $V-dark-black-blue;
+    }
+    
+
+    .mobile-nav {
+        background-color: $color-white;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 15px;
+        border-radius: 6px;
+        position: absolute;
+        top: 24%;
+        right: 10%;
+        transform: translateX(0%);
+    }
+    
+    .accordion {
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 4px;
+        border-bottom:  1px solid;
+    }
+
+    .accordion-item {
+       margin-bottom: 10px;
+    }
+
+    .accordion-header {
+        color: $v-dark-grayish-blue;
+        margin-bottom: 10px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+
+    .accordion-header img {
+        padding-left: 8px;
+    }
+
+    .accordion-header.active {
+        color: $color-grayish-blue;
+    }
+
+    .accordion-header.active img  {
+        margin-left: 8px;
+        transform: rotate(180deg);
+        transition: all .3s ease-in-out;
+    }
+
+    .accordion-body {
+        display: flex;
+        flex-direction: column;
+        background: #f2f2ff;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .accordion-body.active {
+         max-height: 10rem;
+         padding: 1rem;
+    }
+
+    .accordion-body a {
+        color: $color-grayish-blue;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .accordion-body a:hover {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    hr {
+        background: #e0e0ec;
+        border: 0;
+        height: 1px;
+    }
+
+    .mobile-nav .register a {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .mobile-nav .register .sign-up {
+        background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        color: $color-white;
+        width: 120px;
+        align-self: center;
     }
 
     .intro {
